@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UniFatecie – Replica Visual</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-menu fixed-top">
+    <div class="container menu-container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/images/logo-fatecie-ofc.png" alt="UniFatecie" height="42">
+      </a>
+
+      <!-- TOGGLE MOBILE -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+
+          <li class="nav-item">
+            <a class="nav-link menu-link" href="#formulario">
+              <span class="menu-icon"><i class="bi bi-house-fill"></i></span> Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link menu-link" href="#cursos">
+              <span class="menu-icon"><i class="bi bi-list-ul"></i></span> Cursos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link menu-link" href="#vantagens">
+              <span class="menu-icon"><i class="bi bi-star-fill"></i></span> Vantagens
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <a href="#formulario" class="btn btn-success btn-cta">
+              Inscreva-se
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="formulario">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1>
+            Inscreva-se hoje mesmo na <br>
+            <strong>UniFatecie.</strong> O EAD que é <br>
+            <strong>nota máxima no MEC</strong>
+          </h1>
+        </div>
+
+        <div class="col-lg-5 offset-lg-1 mt-4 mt-lg-0">
+          <div class="form-box">
+            <h6 class="text-center mb-3">Fale com nosso consultor 💬</h6>
+
+            <input class="form-control mb-3" placeholder="Digite seu nome completo">
+            <input class="form-control mb-3" placeholder="Digite seu (DDD) + Whatsapp">
+            <input list="lista-cursos" class="form-control mb-3" placeholder="Digite ou selecione um curso">
+
+            <datalist id="lista-cursos">
+
+              <!-- BACHARELADO -->
+              <option value="Administração">
+              <option value="Arquitetura e Urbanismo">
+              <option value="Artes Visuais">
+              <option value="Biblioteconomia">
+              <option value="Biomedicina">
+              <option value="Ciências Biológicas">
+              <option value="Ciências Contábeis">
+              <option value="Ciências Econômicas">
+              <option value="Educação Física">
+              <option value="Educação Física p/ Licenciados">
+              <option value="Engenharia Agronômica">
+              <option value="Engenharia Ambiental e Sanitária">
+              <option value="Engenharia Civil">
+              <option value="Engenharia da Computação">
+              <option value="Engenharia de Alimentos">
+              <option value="Engenharia de Controle e Automação">
+              <option value="Engenharia de Design Digital">
+              <option value="Engenharia de Produção">
+              <option value="Engenharia de Software">
+              <option value="Engenharia Elétrica">
+              <option value="Engenharia Mecânica">
+              <option value="Farmácia • Híbrido">
+              <option value="Fisioterapia • Híbrido">
+              <option value="Fonoaudiologia • Híbrido">
+              <option value="Jornalismo">
+              <option value="Nutrição • Híbrido">
+              <option value="Psicopedagogia">
+              <option value="Publicidade e Propaganda">
+              <option value="Química">
+              <option value="Serviço Social">
+              <option value="Sistemas de Informação">
+              <option value="Teologia">
+              <option value="Terapia Ocupacional • Híbrido">
+              <option value="Zootecnia">
+
+                <!-- TECNÓLOGO -->
+              <option value="Agrocomputação">
+              <option value="Agronegócio">
+              <option value="Análise e Desenvolvimento de Sistemas">
+              <option value="Automação Industrial">
+              <option value="Comércio Exterior">
+              <option value="Design de Interiores">
+              <option value="Design de Moda">
+              <option value="Design de Produto">
+              <option value="Energias Renováveis">
+              <option value="Estética e Cosmética">
+              <option value="Gastronomia">
+              <option value="Gerontologia">
+              <option value="Gestão Ambiental">
+              <option value="Gestão Comercial">
+              <option value="Gestão da Produção Industrial">
+              <option value="Gestão da Qualidade">
+              <option value="Gestão de Recursos Humanos">
+              <option value="Gestão Financeira">
+              <option value="Gestão Hospitalar">
+              <option value="Gestão Pública">
+              <option value="Hotelaria">
+              <option value="Jogos Digitais">
+              <option value="Logística">
+              <option value="Marketing">
+              <option value="Negócios Imobiliários">
+              <option value="Podologia">
+              <option value="Processo Cervejeiro">
+              <option value="Processos Escolares">
+              <option value="Processos Gerenciais">
+              <option value="Processos Químicos">
+              <option value="Produção Publicitária">
+              <option value="Radiologia">
+              <option value="Saneamento Ambiental">
+              <option value="Secretariado Executivo">
+              <option value="Segurança do Trabalho">
+              <option value="Segurança Pública">
+              <option value="Serviços Jurídicos">
+              <option value="Sistemas Biomédicos">
+              <option value="Sistemas para Internet">
+              <option value="Tecnologia Oftálmica">
+              <option value="Terapias Integrativas e Complementares">
+
+                <!-- LICENCIATURA -->
+              <option value="Artes">
+              <option value="Ciência da Computação">
+              <option value="Ciências Biológicas (Licenciatura)">
+              <option value="Educação Física (Licenciatura)">
+              <option value="Educação Física p/ Bachareis">
+              <option value="Filosofia">
+              <option value="Física">
+              <option value="Geografia">
+              <option value="História">
+              <option value="Letras em Língua Portuguesa e Libras">
+              <option value="Letras em Português e Inglês">
+              <option value="Matemática">
+              <option value="Pedagogia">
+              <option value="Química (Licenciatura)">
+              <option value="Sociologia">
+
+            </datalist>
+            <button class="btn btn-success w-100">Tenho Interesse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO INSTITUCIONAL -->
+  <section class="section bg-soft">
+    <div class="container">
+
+      <div class="institution-wrapper">
+        <div class="institution-item">
+          <h4 class="institution-title">
+            O EAD que <br>
+            mais cresce <br>
+            no Brasil!!!
+          </h4>
+        </div>
+
+        <div class="institution-item center">
+          <div class="institution-logo">
+            <img src="assets/images/logo-fatecie-ofc.png" alt="UniFatecie">
+          </div>
+        </div>
+
+        <div class="institution-item right">
+          <div class="institution-right">
+            <img src="assets/images/selo-emec-unifatecie.png" class="qr-mec" alt="QR Code e-MEC">
+            <p class="institution-text">
+              <strong>Construa seu futuro com os melhores.</strong>
+              Somos nota máxima no MEC.
+              Não perca mais tempo e venha para o
+              EAD mais barato e rápido do Brasil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CURSOS -->
+  <section class="section bg-soft" id="cursos">
+    <h2 class="section-title">
+      Cursos de graduação com matrículas abertas
+    </h2>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="course-box">
+            <h5>Bacharelado</h5>
+            <ul>
+              <li>Administração</li>
+              <li>Arquitetura e Urbanismo</li>
+              <li>Artes Visuais</li>
+              <li>Biblioteconomia</li>
+              <li>Biomedicina</li>
+              <li>Ciências Biológicas</li>
+              <li>Ciências Contábeis</li>
+              <li>Ciências Econômicas</li>
+              <li>Educação Física</li>
+              <li>Educação Física p/ Licenciados</li>
+              <li>Engenharia Agronômica</li>
+              <li>Engenharia Ambiental e Sanitária</li>
+              <li>Engenharia Civil</li>
+              <li>Engenharia da Computação</li>
+              <li>Engenharia de Alimentos</li>
+              <li>Engenharia de Controle e Automação</li>
+              <li>Engenharia de Design Digital</li>
+              <li>Engenharia de Produção</li>
+              <li>Engenharia de Software</li>
+              <li>Engenharia Elétrica</li>
+              <li>Engenharia Mecânica</li>
+              <li>Farmácia • Híbrido</li>
+              <li>Fisioterapia • Híbrido</li>
+              <li>Fonoaudiologia • Híbrido</li>
+              <li>Jornalismo</li>
+              <li>Nutrição • Híbrido</li>
+              <li>Psicopedagogia</li>
+              <li>Publicidade e Propaganda</li>
+              <li>Química</li>
+              <li>Serviço Social</li>
+              <li>Sistemas de Informação</li>
+              <li>Teologia</li>
+              <li>Terapia Ocupacional • Híbrido</li>
+              <li>Zootecnia</li>
+            </ul>
+            <a class="btn btn-outline-success w-100 mt-3" href="#formulario">Cadastre-se Agora</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="course-box">
+            <h5>Tecnólogo</h5>
+            <ul>
+              <li>Agrocomputação</li>
+              <li>Agronegócio</li>
+              <li>Análise e Desenvolvimento de Sistemas</li>
+              <li>Automação Industrial</li>
+              <li>Comércio Exterior</li>
+              <li>Design de Interiores</li>
+              <li>Design de Moda</li>
+              <li>Design de Produto</li>
+              <li>Energias Renováveis</li>
+              <li>Estética e Cosmética</li>
+              <li>Gastronomia</li>
+              <li>Gerontologia</li>
+              <li>Gestão Ambiental</li>
+              <li>Gestão Comercial</li>
+              <li>Gestão da Produção Industrial</li>
+              <li>Gestão da Qualidade</li>
+              <li>Gestão de Recursos Humanos</li>
+              <li>Gestão Financeira</li>
+              <li>Gestão Hospitalar</li>
+              <li>Gestão Pública</li>
+              <li>Hotelaria</li>
+              <li>Jogos Digitais</li>
+              <li>Logística</li>
+              <li>Marketing</li>
+              <li>Negócios Imobiliários</li>
+              <li>Podologia</li>
+              <li>Processo Cervejeiro</li>
+              <li>Processos Escolares</li>
+              <li>Processos Gerenciais</li>
+              <li>Processos Químicos</li>
+              <li>Produção Publicitária</li>
+              <li>Radiologia</li>
+              <li>Saneamento Ambiental</li>
+              <li>Secretariado Executivo</li>
+              <li>Segurança do Trabalho</li>
+              <li>Segurança Pública</li>
+              <li>Serviços Jurídicos</li>
+              <li>Sistemas Biomédicos</li>
+              <li>Sistemas para Internet</li>
+              <li>Tecnologia Oftálmica</li>
+              <li>Terapias Integrativas e Complementares</li>
+            </ul>
+            <a class="btn btn-outline-success w-100 mt-3" href="#formulario">Cadastre-se Agora</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="course-box">
+            <h5>Licenciatura</h5>
+            <ul>
+              <li>Artes</li>
+              <li>Ciência da Computação</li>
+              <li>Ciências Biológicas</li>
+              <li>Educação Física</li>
+              <li>Educação Física p/ Bachareis</li>
+              <li>Filosofia</li>
+              <li>Física</li>
+              <li>Geografia</li>
+              <li>História</li>
+              <li>Letras em Língua Portuguesa e Libras</li>
+              <li>Letras em Português e Inglês</li>
+              <li>Matemática</li>
+              <li>Pedagogia</li>
+              <li>Química</li>
+              <li>Sociologia</li>
+            </ul>
+            <a class="btn btn-outline-success w-100 mt-3" href="#formulario">Cadastre-se Agora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS / DESTAQUES -->
+  <section class="section" id="vantagens">
+    <div class="container">
+      <div class="row g-3 align-items-stretch stats-grid">
+
+        <!-- CARD LARANJA -->
+        <div class="col-lg-4">
+          <div class="stat-card stat-primary h-100">
+            <h3>Vem Ser UniFatecie</h3>
+          </div>
+        </div>
+
+        <!-- TOP RIGHT -->
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-card">
+            <strong>5/5</strong>
+            <span>nota máxima no MEC</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-card">
+            <strong>+ 100</strong>
+            <span>cursos de graduação</span>
+          </div>
+        </div>
+
+        <!-- BOTTOM ROW -->
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-card">
+            <strong>+450.000</strong>
+            <span>alunos ativos</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-card">
+            <strong>70%</strong>
+            <span>de desconto</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <div class="stat-card">
+            <strong>+ 800</strong>
+            <span>polos em todo Brasil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PASSOS -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-3">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h6>Preencha o formulário</h6>
+            <p>reserve sua vaga com um mega desconto</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h6>Fale com consultor</h6>
+            <p>daremos toda assessoria que você precisar</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="step-card step-highlight">
+            <span class="step-number">03</span>
+            <h6>Garanta seu desconto</h6>
+            <p>adquira sua bolsa de estudos exclusiva</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <h6>Inicie seus estudos</h6>
+            <p>agora é hora de se dedicar aos estudos</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a class="btn btn-success btn-lg px-5" href="#formulario">Cadastre-se Agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <span>© UniFatecie 2026</span>
+      <span>Privacidade & Cookies · Contato</span>
+    </div>
+  </footer>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" class="cookie-banner d-none">
+    <div class="cookie-container">
+      <p class="cookie-text">
+        Nós usamos cookies para melhorar sua experiência e analisar o tráfego em nosso site.
+        Ao aceitar, você concorda com o uso de cookies conforme descrito em nossa
+        <a href="politica-de-privacidade.html" target="_blank">Política de Privacidade e Cookies</a>.
+      </p>
+      <button id="accept-cookies" class="btn btn-cookie">
+        Aceitar
+      </button>
+    </div>
+  </div>
+</body>
+<script src="js/cookie.js"></script>
+
+</html>
