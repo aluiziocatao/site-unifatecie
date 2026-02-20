@@ -24,20 +24,25 @@ if ($nome === '' || $telefone === '' || $curso === '') {
 $mail = new PHPMailer(true);
 
 try {
-    // 🔥 CONFIGURAÇÃO MAILTRAP
+    // CONFIGURAÇÃO EMAIL
     $mail->isSMTP();
-    $mail->Host = 'sandbox.smtp.mailtrap.io';
+    $mail->Host = getenv('SMTP_HOST');
     $mail->SMTPAuth = true;
-    $mail->Username = '097442cac2b594'; // seu username
-    $mail->Password = '75779819fe21a1'; // coloque a senha completa
-    $mail->Port = 2525;
+    $mail->Username = getenv('SMTP_USER');
+    $mail->Password = getenv('SMTP_PASS');
+    $mail->Port = getenv('SMTP_PORT');
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->CharSet = 'UTF-8';
 
     // Remetente
-    $mail->setFrom('no-reply@unifatecie.com', 'Site UniFatecie');
+    $mail->setFrom(getenv('MAIL_FROM'), 'UniFatecie');
 
-    // Destinatário (quem recebe)
-    $mail->addAddress('teste@unifatecie.com');
+    // Destinatário
+    $mail->addAddress(getenv('MAIL_TO_1'));
+
+    if (getenv('MAIL_TO_2')) {
+        $mail->addAddress(getenv('MAIL_TO_2'));
+    }
 
     // Conteúdo
     $mail->isHTML(true);
