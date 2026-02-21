@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $nome = trim($_POST['nome'] ?? '');
 $telefone = trim($_POST['telefone'] ?? '');
 $curso = trim($_POST['curso'] ?? '');
+$posGraduacao = isset($_POST['pos-graduacao']) ? 'Sim' : 'Não';
 
 if ($nome === '' || $telefone === '' || $curso === '') {
     echo 'ERRO';
@@ -95,6 +96,10 @@ try {
                     <tr style="background:#f8f8f8;">
                     <td><strong>Curso:</strong></td>
                     <td>' . $curso . '</td>
+                    </tr>
+                    <tr style="background:#f8f8f8;">
+                    <td><strong>Interesse em Pós-graduação:</strong></td>
+                    <td>' . $posGraduacao . '</td>
                     </tr>
                 </table>
 
