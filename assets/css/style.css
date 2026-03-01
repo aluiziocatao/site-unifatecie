@@ -122,6 +122,12 @@ body {
   justify-content: center;
 }
 
+.institution-valor-graduacao {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
 /* direita */
 .institution-right {
   display: flex;
