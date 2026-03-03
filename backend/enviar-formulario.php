@@ -41,9 +41,10 @@ try {
     // Destinatário
     $mail->addAddress(getenv('MAIL_TO_1'));
 
-    if (getenv('MAIL_TO_2')) {
-        $mail->addAddress(getenv('MAIL_TO_2'));
-    }
+    // Para um possível segundo destinatário
+    // if (getenv('MAIL_TO_2')) {
+    //     $mail->addAddress(getenv('MAIL_TO_2'));
+    // }
 
     // Conteúdo
     $mail->isHTML(true);
